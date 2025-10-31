@@ -1,13 +1,40 @@
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{enumitem}
 \usepackage{geometry}
-\geometry{margin=2cm}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\geometry{left=2.5cm,right=2cm,top=2cm,bottom=2cm}
+
+% Настройка для кода
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue},
+  stringstyle=\color{red},
+  commentstyle=\color{green!60!black},
+  showstringspaces=false,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  captionpos=b
+}
+
+\title{Многоагентные системы \\ Основные концепции, архитектуры и применение}
+\author{}
+\date{\today}
 
 \begin{document}
 
-\input{content/lectures}
+\maketitle
+
+% Подключаем лекцию из папки content
+\input{content/multi_agent_systems}
 
 \end{document}
